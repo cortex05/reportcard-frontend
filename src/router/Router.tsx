@@ -4,11 +4,13 @@ import Home from '../screens/Home/Home'
 import SampleBill from '../screens/Samples/SampleBill/SampleBill'
 import SamplePolitician from '../screens/Samples/SamplePolitician/SamplePolitician'
 import Single from '../screens/Single/Single'
+import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 
 const Router = () => {
   return (
     <BrowserRouter>
+      <Header />
       <div className="page">
         <Routes>
           <Route path="/" element={<Home />} />

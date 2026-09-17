@@ -1,0 +1,45 @@
+.header {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: rgb(12, 30, 11);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.header a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.logo {
+  display: none;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (min-width: 576px) {
+  .header {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .logo {
+    display: block;
+    width: 48px;
+    height: 48px;
+  }
+
+  .links {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
